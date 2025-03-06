@@ -79,33 +79,38 @@ Edit
 npm start
 The application will be running at: http://localhost:5000
 
-📌 API Endpoints
-🔑 Authentication
-POST /api/auth/register — Register a new user
-POST /api/auth/login — Log in an existing user
-POST /api/auth/forgot-password — Request a password reset
-POST /api/auth/verify-code — Verify the reset code
-POST /api/auth/reset-password — Reset the password
-📂 File Management
-POST /api/storage/upload — Upload files
-GET /api/storage/files — Retrieve all files
-GET /api/storage/folders — Retrieve all folders
-DELETE /api/storage/files/:fileId — Delete a specific file
-POST /api/storage/folders — Create a new folder
-DELETE /api/storage/folders/:folderId — Delete a specific folder
-🛠 Environment Setup Tips
-Replace <username> and <password> in the .env file with your MongoDB credentials.
-Get your Google OAuth credentials from the Google Developer Console.
-📄 License
-This project is licensed under the MIT License.
+## 📌 **API Endpoints**
 
-📞 Contact
-For issues, please create an issue on this repository.
+### 🔑 **Authentication**
+- **POST** `/api/auth/register` — Register a new user  
+- **POST** `/api/auth/login` — Log in an existing user  
+- **POST** `/api/auth/forgot-password` — Request a password reset  
+- **POST** `/api/auth/verify-code` — Verify the reset code  
+- **POST** `/api/auth/reset-password` — Reset the password  
 
-yaml
-Copy
-Edit
+### 📂 **File Management**
+- **POST** `/api/storage/upload` — Upload files  
+- **GET** `/api/storage/files` — Retrieve all files  
+- **GET** `/api/storage/folders` — Retrieve all folders  
+- **DELETE** `/api/storage/files/:fileId` — Delete a specific file  
+- **POST** `/api/storage/folders` — Create a new folder  
+- **DELETE** `/api/storage/folders/:folderId` — Delete a specific folder  
 
 ---
 
-You can copy and paste this directly into your `README.md` file, and it will render with proper formatting on GitHub or any other markdown viewer. Let me know if you need any further adjustments! 😎
+## 🛠 **Environment Setup Tips**
+- Replace `<username>` and `<password>` in the `.env` file with your MongoDB credentials.  
+- Get your **Google OAuth** credentials from the [Google Developer Console](https://console.developers.google.com/).  
+
+---
+
+## 📄 **License**
+This project is licensed under the **MIT License**.
+
+---
+
+## 📞 **Contact**
+For issues, please create an **issue** on this repository.
+
+Contributing
+Contributions are welcome! Please fork the repository and submit a pull request for any improvements or features.
