@@ -1,0 +1,328 @@
+{
+	"info": {
+		"_postman_id": "85e3b2c9-03de-430c-8ff1-326ecffa07f9",
+		"name": "storage management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42858859"
+	},
+	"item": [
+		{
+			"name": "signIn",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"Barshon\",\r\n    \"email\": \"barshonshifat2@gmail.com\",\r\n    \"password\": \"172096\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SignIn with Google",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"eyJhbGciOiJSUzI1NiIsImtpZCI6IjI1ZjgyMTE3MTM3ODhiNjE0NTQ3NGI1MDI5YjAxNDFiZDViM2RlOWMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIxMDkzOTMzOTI1MzktYnAzY2dyNjVjbjlhYm1jY2l1aGNydnE4dTkwM2t1bTMuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIxMDkzOTMzOTI1MzktYnAzY2dyNjVjbjlhYm1jY2l1aGNydnE4dTkwM2t1bTMuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMDcxMzk3Mzk4Njc4NDA4NjI3OTYiLCJlbWFpbCI6ImJhcnNob25zaGlmYXQyQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoidHNmWGlvdWswV1dFVmNFYUw1eWsyQSIsIm5hbWUiOiJzaGlmYXQgQmFyc2hvbiIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NKSjhzdWxBQlNCMDZfdDVBZ05rM1QxZmhMNW0yYU1XaEZxN05DQVh1OTdNaDZrV3h6dz1zOTYtYyIsImdpdmVuX25hbWUiOiJzaGlmYXQiLCJmYW1pbHlfbmFtZSI6IkJhcnNob24iLCJpYXQiOjE3NDEyMTAzMzIsImV4cCI6MTc0MTIxMzkzMn0.b7G4ThIPOCy-HQ5iPbWEdt9T8vseGmQIonMUXY3OAvtcDKUcondAkhZZQs95b46Mcp_mJ6JgsF83an7vwjKkkQISAUjbTWn7a2UUT73SLOHlBY1zi0NkDd2W_lJY4SlP_2KVMwpGfQ2OjHLUbBaC4LJBE-BXi13-Ykgsw9SoYnkMRskLqLUjGyh1uBLx38cOLe90pa5sccUH9czofg5EQsn16RUx9OrO0lSCNxnz9_zDvsM--UOR8k7NiZdOtDyoEwenwxOgpk9YchHuoyS0LVUtjNW-2L_DIvkXBcjZahmobyr-clN4aCVNIVBewI3XS4QV-d2dwo2RnDbh2IhXAQ\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auth/google/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"google",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"barshonshifat2@gmail.com\",\r\n    \"password\": \"172096\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "forget password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"barshonshifat2@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auth/forgot-password",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"forgot-password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verify reset code",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"barshonshifat2@gmail.com\",\r\n    \"code\": \"509651\"  // Use the code received in email\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auth/verify-code",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"verify-code"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reset password:",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"shifat172096@gmail.com\",\r\n    \"password\": \"172096\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "file upload",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3Yzk2ZmY3YTVkYzBlNjgwZjgyM2FlZiIsImlhdCI6MTc0MTI3MTQ3MywiZXhwIjoxNzQxODc2MjczfQ.ICa9UQ-O6Lr_aL7Ic-8xBPPAKcgdz_yt0H2v_WI4_uM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"type": "file",
+							"src": "postman-cloud:///1effa63a-6840-4170-b058-e067bdce0064"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/storage/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"storage",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "folder create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YzljNjBhZWQxM2U3YjFkNDg4MzYyOCIsImlhdCI6MTc0MTI3ODIzNywiZXhwIjoxNzQxODgzMDM3fQ.fOaNthkL5zquwaQ1VWy5DyA7HLql5aRZ1-RzZwlPWMY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"New Folder\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/storage/folders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"storage",
+						"folders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show files",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Show folder",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Files",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Folder",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YzljNjBhZWQxM2U3YjFkNDg4MzYyOCIsImlhdCI6MTc0MTI4MDQzNSwiZXhwIjoxNzQxODg1MjM1fQ.4LltUfOQC335O8lGycTOhbGF_zzWuCeOg-6f2HkRzxE",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/storage/folders/:67c9d48ccd3953dd2e43b9cd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"storage",
+						"folders",
+						":67c9d48ccd3953dd2e43b9cd"
+					],
+					"variable": [
+						{
+							"key": "67c9d48ccd3953dd2e43b9cd",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
